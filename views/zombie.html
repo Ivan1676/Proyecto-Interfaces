@@ -30,16 +30,8 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="../css/bootstrapStyle/style.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="../css/bootstrapStyle/styleForm.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="../css/style/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style/zombie.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <!---Nav-->
@@ -103,11 +95,13 @@
               Bootstrap
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="gallery.html">Gallery</a>
+              <a class="dropdown-item" href="../bootstrap/gallery.html"
+                >Gallery</a
+              >
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="tables.html">Tables</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Form</a>
+              <a class="dropdown-item" href="form.html">Form</a>
             </div>
           </li>
         </ul>
@@ -152,117 +146,55 @@
         </form>
       </div>
     </nav>
-    <!--Form-->
-    <div class="container">
-      <div class="row align-self-end mt-5 mb-5">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <form method="post">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                aria-describedby="nameHelp"
-                placeholder="Enter name"
-              />
-              <small id="nameHelp" class="form-text text-muted"
-                >We'll never share your email with anyone else.</small
-              >
-            </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="password"
-                aria-describedby="passwordHelp"
-                placeholder="Enter password"
-              />
-              <small id="passwordHelp" class="form-text text-muted"
-                >We'll never share your email with anyone else.</small
-              >
-            </div>
-            <div class="form-group">
-              <label for="email">Email address</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                aria-describedby="emailHelp"
-                placeholder="Enter email"
-              />
-              <small id="emailHelp" class="form-text text-muted"
-                >We'll never share your email with anyone else.</small
-              >
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone number</label>
-              <input
-                type="text"
-                class="form-control"
-                id="phone"
-                aria-describedby="phoneHelp"
-                placeholder="Enter phone"
-              />
-              <small id="phoneHelp" class="form-text text-muted"
-                >We'll never share your email with anyone else.</small
-              >
-            </div>
-            <div class="form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="exampleCheck1"
-              />
-              <label class="form-check-label" for="exampleCheck1"
-                >Check me out</label
-              >
-            </div>
-            <button type="submit" class="btn btn-primary mt-2">Submit</button>
-          </form>
-        </div>
-        <!--List Group-->
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-4">
-          <h1 class="mb-4">List of the highlights of the month</h1>
-          <ul class="list-group">
-            <li class="list-group-item bg-dark active">Elden Ring</li>
-            <li class="list-group-item bg-dark">Nier Automata</li>
-            <li class="list-group-item bg-dark">God of war Ragnarok</li>
-            <li class="list-group-item bg-dark">Horizon Forbidden West</li>
-            <li class="list-group-item bg-dark">Devil May Cry 5</li>
-            <li class="list-group-item bg-dark">Hogwarts Legacy</li>
-            <li class="list-group-item bg-dark">Sekiro</li>
-          </ul>
-        </div>
-      </div>
-    </div>
 
-    <!--Collapse-->
-    <div class="container mt-4 mb-3">
-      <div class="row">
-        <h1 class="col-12 mb-3">Collapse</h1>
-        <p>
-          <button
-            class="btn btn-danger"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapseExample"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-          >
-            Click here to see something
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample">
-          <div class="card card-body bg-dark">
-            Animal Crossing: New Horizons unit sales worldwide 2022 The Nintendo
-            title was a roaring success, selling more digital copies - five
-            million - in a single month than any other console game in history.
-            Currently, lifetime sales of Animal Crossing: New Horizons sit at
-            39.38 million units.
-          </div>
-        </div>
+    <div class="rules">
+      <h1 id="ruleh1">Welcome to the Zombie game</h1>
+      <p>
+        The rules of the game are quite simple, you just have to use the inputs
+        to tell de characterer whatever you want her to do.
+      </p>
+      <p>Idle: Is the default movement of the zombie.</p>
+      <p>
+        Attack: The character will swap his animation in to an attack movement.
+      </p>
+      <p>Die: The character will suddenly die.</p>
+      <p>
+        Walk: The character will show you a new mobement animation as if she is
+        walking.
+      </p>
+    </div>
+    <div class="zombie">
+      <div class="inputsZombie">
+        <input
+          type="radio"
+          name="animacion"
+          id="idle"
+          value="idleWoman"
+          checked="checked"
+          class="radioI"
+        />Idle
+        <input
+          type="radio"
+          name="animacion"
+          id="attack"
+          value="attackWoman"
+          class="radioI"
+        />Attack
+        <input
+          type="radio"
+          name="animacion"
+          id="die"
+          value="dieWoman"
+          class="radioI"
+        />Die
+        <input
+          type="radio"
+          name="animacion"
+          id="walk"
+          value="walkWoman"
+          class="radioI"
+        />Walk
+        <div id="imagen"></div>
       </div>
     </div>
 

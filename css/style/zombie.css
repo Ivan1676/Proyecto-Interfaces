@@ -1,0 +1,140 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 174px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 174px;
+}
+
+.rules {
+    position: relative;
+    margin: 3em;
+}
+
+.inputsZombie {
+    position: relative;
+}
+
+.zombie {
+    position: relative;
+    left: 50%;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    -webkit-transform: translate(-50%, 0%); /* Esta linea y la de abajo son necesarias para arreglarlo */
+    transform: translate(-50%, 0%);
+}
+
+#ruleh1 {
+    margin: 1em;
+}
+
+.radioI {
+    margin-left: 1em;
+}
+
+#idle:checked + input + input + input + #imagen {
+    position: relative;
+    width:143px;
+    height: 155px;
+    background: url('../../imgs/png/female/idleMujer.png') left center;
+    margin: 0 auto;
+}
+
+#idle:checked + input + input + input + #imagen {
+    animation: idle 1.5s steps(15, end) infinite;
+}
+
+#attack:checked + input + input + #imagen {
+    position: relative;
+    width:143px;
+    height: 155px;
+    background: url('../../imgs/png/female/atacaMujer.png') left center;
+    margin: 0 auto;
+}
+  
+#attack:checked + input + input + #imagen {
+    animation: attack 1.5s steps(8, end) infinite;
+}
+
+#die:checked + input + #imagen {
+    position: relative;
+    width:143px;
+    height: 155px;
+    background: url('../../imgs/png/female/muereMujer.png') left center;
+    margin: 0 auto;
+}
+  
+#die:checked + input + #imagen {
+    animation: die 1.5s steps(12, end) infinite;
+}
+
+#walk:checked + #imagen {
+    position: relative;
+    width:143px;
+    height: 155px;
+    background: url('../../imgs/png/female/walkMujer.png') left center;
+    margin: 0 auto;
+}
+  
+#walk:checked + #imagen {
+    animation: walk 1.5s steps(10, end) infinite;
+}
+
+@keyframes idle {
+    from {background-position: 0px; }
+    to   {background-position: -2145px;}
+
+}
+
+@-moz-keyframes idle {
+    from { background-position: 0px; }
+    to { background-position: -2145px; }
+}
+
+@keyframes attack {
+    from {background-position: 0px; }
+    to   {background-position: -1144px;}
+
+}
+
+@-moz-keyframes attack {
+    from {background-position: 0px; }
+    to   {background-position: -1144px;}
+
+}
+
+@keyframes die {
+    from {background-position: 0px; }
+    to   {background-position: -1980px;}
+
+}
+
+@-moz-keyframes die {
+    from {background-position: 0px; }
+    to   {background-position: -1980px;}
+
+}
+
+@keyframes walk {
+    from {background-position: 0px; }
+    to   {background-position: -1430px;}
+
+}
+
+@-moz-keyframes walk {
+    from {background-position: 0px; }
+    to   {background-position: -1430px;}
+
+}
