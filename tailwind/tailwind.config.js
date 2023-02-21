@@ -2,7 +2,12 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: { 
+      sizing: {
+      'mx50': '50%',
+      'my50': '50%',
+    }
+  },
   },
   plugins: [],
 }
