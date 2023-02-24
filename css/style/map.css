@@ -1,0 +1,71 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10.875em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10.875em;
+}
+
+.responsive {
+    height: auto;
+}
+
+#contenedor { 
+    width: 51.75em; /*828px*/
+    height: 25em; /*400px*/
+    background-image: url(../../imgs/solaire.png);    
+    position: relative;
+    margin: 5em auto; 
+    padding: 0;
+    border-radius: 0.625em;
+    margin: 5em auto;  
+} 
+
+#small {
+    width: 100%;
+    position: relative;
+    margin: 5em auto;
+    text-align: center;  
+}
+
+#solaireSmall {
+    width: 100%;
+    height: auto;
+    border-radius: 0.625em;
+}
+
+@media only screen and (max-width: 1200px) {
+    #contenedor {
+       display: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #small {
+       display: none;
+    }
+}
+
+#personajes li {margin: 0; padding: 0; list-style: none; display: block; position: absolute;}  
+
+#solaire {left: 0.063em;top:0.125em;width: 13.125em;height: 25.625em;} /*left:1px top:2 width: 210px;height: 410px; */
+#solaire2 {left: 12.563em;top: 0.438em;width: 12.5em;height: 25.625em;}/*#solaire2 {left: 201px;top: 7px;width: 200px;height: 410px;}*/
+#solaire3 {left: 28.188em;top: 0.141em;width: 12.5em;height: 25.625em;} /*{left: 451px;top: 2.25px;width: 200px;height: 410px;}*/
+#solaire4 {left: 41.313em;top: 1.688em;width: 10em;height: 25.625em;} /*{left: 661px;top: 27px;width: 160px;height: 410px;}*/
+
+
+#solaire:hover {background: url(../../imgs/solaire.png) 0em -24.656em no-repeat;} /*{background: url(../../imgs/solaire.png) 0px -394.5px no-repeat;} */
+#solaire2:hover {background: url(../../imgs/solaire.png) -12.5em -25em no-repeat;} /*{background: url(../../imgs/solaire.png) -200px -400px no-repeat;}*/
+#solaire3:hover {background: url(../../imgs/solaire.png) -28.125em -24.688em no-repeat;} /*{background: url(../../imgs/solaire.png) -450px -395px no-repeat;}*/
+#solaire4:hover {background: url(../../imgs/solaire.png) -41.25em -26.25em no-repeat;} /*{background: url(../../imgs/solaire.png) -660px -420px no-repeat;}*/
