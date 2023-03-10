@@ -13,3 +13,11 @@ footer {
     width: 100%;
     height: 174px;
 }
+
+#iconos {
+    margin-left: 50%;
+    position: relative;
+    -webkit-transform: translate(-50%, 0%); /* Esta linea y la de abajo son necesarias para arreglarlo */
+    transform: translate(-50%, 0%);
+}
+
